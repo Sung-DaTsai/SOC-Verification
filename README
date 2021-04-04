@@ -1,25 +1,11 @@
-1. What you submit.
-b05901040_final/
-		abc/   -> ABC framework source code
-		src/   -> my source code
-		testcase/  -> testcase that comes from ICCAD contest
-		b05901040_report.pdf  -> final report
-		Makefile  -> Makefile, use to compile
-		README    -> this file
-2. How to compile your project.
-(1) Type make to compile this project, and binary file xec is built.
-(2) To execute xec, Type:
+2020 ICCAD Contest Problem A: X-value Equivalence Checking
+This is final project of SOC Verification Course.
+In this project, use two-bit to represent X state and solve Combinational Equivalence checking by SAT solver.
+
+To Compile this project:
+(1) Add ABC tool: ABC tool can be found in https://github.com/berkeley-abc/abc
+(2) Type make to compile this project, and binary file xec is built.
+(3) To execute xec, Type:
     ./xec <golden.v> <revised.v> <output>
-3. What the testcases are and how to test them.
+
 Testcases are from: http://iccad-contest.org/2020/Problem_A/2020A_cases9.zip
-There are 9 cases can be tested, which are put under testcase/case1 to case9
-Test them by typing:
-./xec testcase/case1/gf.v testcase/case1/rf.v case1.out
-./xec testcase/case2/gf.v testcase/case2/rf.v case2.out
-./xec testcase/case3/gf.v testcase/case3/rf.v case3.out
-./xec testcase/case4/gf.v testcase/case4/rf.v case4.out
-./xec testcase/case5/gf.v testcase/case5/rf.v case5.out
-./xec testcase/case6/gf.v testcase/case6/rf.v case6.out
-./xec testcase/case7/gf.v testcase/case7/rf.v case7.out
-./xec testcase/case8/gf.v testcase/case8/rf.v case8.out
-./xec testcase/case9/gf.v testcase/case9/rf.v case9.out
